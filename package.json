@@ -1,0 +1,27 @@
+{
+  "name": "bezogrodek",
+  "version": "1.0.0",
+  "description": "website for bezogrodek drinks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WronskiN/bezogrodek.git"
+  },
+  "keywords": [
+    "bezogródek",
+    "bezogródek",
+    "napoje"
+  ],
+  "author": "SotonWeb - created by Norbert Wronski and Marcin Polewaczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WronskiN/bezogrodek/issues"
+  },
+  "homepage": "https://github.com/WronskiN/bezogrodek#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
