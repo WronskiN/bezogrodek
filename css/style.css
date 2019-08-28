@@ -13,4 +13,73 @@ body {
   font-family: "Nunito", sans-serif;
   color: #000;
   font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.6;
+  background-color: #F7F0DE; }
+
+.navigation {
+  width: 100vw;
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative; }
+  .navigation__logo-box {
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .navigation__logo-box img {
+      width: 100px;
+      height: 50px; }
+  .navigation__list {
+    display: none; }
+  .navigation__list--mb {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #F7F0DE;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .navigation__item {
+    padding: 1rem;
+    margin: 1rem; }
+    .navigation__item--link {
+      text-decoration: none;
+      color: #000; }
+  .navigation__button {
+    border: none;
+    border-radius: 0;
+    width: 2.5rem;
+    height: 2px;
+    background-color: #000;
+    cursor: pointer;
+    position: absolute;
+    right: 2.5rem;
+    z-index: 10; }
+  .navigation__button::before, .navigation__button::after {
+    content: "";
+    width: 2.5rem;
+    height: 2px;
+    display: block;
+    background-color: black;
+    z-index: 10; }
+  .navigation__button::before {
+    transform: translateY(-0.8rem); }
+  .navigation__button::after {
+    transform: translateY(0.6rem); }
+  .navigation__active {
+    transform: rotate(45deg); }
+    .navigation__active::before {
+      transform: translate(0) rotate(90deg); }
+    .navigation__active::after {
+      display: none; }
