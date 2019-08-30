@@ -13,11 +13,58 @@ html {
       font-size: 62.5%; } }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000;
-  font-weight: 300;
   line-height: 1.6;
+  box-sizing: border-box;
+  background-color: #f0e4c6; }
+
+.container {
+  max-width: 1330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
   background-color: #F7F0DE; }
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header__product {
+    max-width: 80%;
+    margin: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; }
+    @media screen and (min-width: 50em) {
+      .header__product {
+        max-width: 70%; } }
+    @media screen and (min-width: 75em) {
+      .header__product {
+        max-width: 60%; } }
+    .header__product--p1 {
+      margin-bottom: 1rem; }
+    .header__product--p2 span {
+      font-weight: 900;
+      letter-spacing: 1px; }
+  .header__img {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../image-mb/butelki.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center; }
+    @media screen and (min-width: 62.5em) {
+      .header__img {
+        height: 100vh;
+        background-position: center top; } }
 
 .navigation {
   width: 100vw;
@@ -76,6 +123,8 @@ body {
     .navigation__item--link {
       text-decoration: none;
       color: #000; }
+    .navigation__item--link:hover {
+      color: #eeae4c; }
   .navigation__button {
     border: none;
     border-radius: 0;
@@ -89,6 +138,8 @@ body {
     @media screen and (min-width: 50em) {
       .navigation__button {
         display: none; } }
+  .navigation__button:hover {
+    background-color: #eeae4c; }
   .navigation__button::before, .navigation__button::after {
     content: "";
     width: 2.5rem;
@@ -96,13 +147,24 @@ body {
     display: block;
     background-color: black;
     z-index: 10; }
+  .navigation__button:hover::before, .navigation__button:hover::after {
+    background-color: #eeae4c; }
   .navigation__button::before {
     transform: translateY(-0.8rem); }
   .navigation__button::after {
     transform: translateY(0.6rem); }
   .navigation__active {
-    transform: rotate(45deg); }
+    background-color: #eeae4c;
+    transform: rotate(45deg);
+    animation: hamburger .3s ease; }
     .navigation__active::before {
-      transform: translate(0) rotate(90deg); }
+      transform: translate(0) rotate(90deg);
+      background-color: #eeae4c; }
     .navigation__active::after {
       display: none; }
+
+@keyframes hamburger {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(45deg); } }

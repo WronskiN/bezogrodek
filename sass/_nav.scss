@@ -11,18 +11,11 @@
   }
   // NAVIGATION - LOGO
   &__logo-box {
-    // width: 100%;
-    // height: 100px;
     margin: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
-
-    // img {
-    //   width: 100px;
-    //   height: 50px;
-    // }
   }
   &__logoName {
     font-family: Arial, Helvetica, sans-serif;
@@ -71,6 +64,7 @@
     align-items: center;
 
   }
+  
   // NAVIGATION - MENU ITEM
   &__item {
       padding: 1rem;
@@ -78,6 +72,9 @@
     &--link {
       text-decoration: none;
       color: $color-black;
+    }
+    &--link:hover {
+      color: $color-orange;
     }
   }
   // NAVIGATION - HAMBURGER BUTTON
@@ -97,6 +94,9 @@
       display: none;
     }
   }
+  &__button:hover {
+    background-color: $color-orange;
+  }
 
   &__button::before,
   &__button::after {
@@ -107,6 +107,11 @@
     background-color: black;
     z-index: 10;
   }
+  &__button:hover::before,
+  &__button:hover::after {
+    background-color: $color-orange;
+  }
+
   &__button::before {
     transform: translateY(-.8rem);
   }
@@ -115,11 +120,20 @@
   }
 
   &__active {
+    background-color: $color-orange;
     transform: rotate(45deg);
-
+    animation: hamburger .3s ease;
     &::before {
       transform: translate(0) rotate(90deg);
+      background-color: $color-orange;
     }
     &::after {display: none;}
+
+  }
+  @keyframes hamburger {
+    0% {
+      transform: rotate(0);
+    }
+    100% {transform: rotate(45deg);}
   }
 }
