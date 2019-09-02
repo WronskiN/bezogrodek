@@ -13,6 +13,7 @@ html {
       font-size: 62.5%; } }
 
 body {
+  min-height: 200vh;
   font-family: "Montserrat", sans-serif;
   color: #000;
   line-height: 1.6;
@@ -25,14 +26,26 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background-color: #F7F0DE; }
+  background-color: #F7F0DE;
+  position: relative; }
+
+.main {
+  max-width: 1330px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
 
 .header {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  left: 0; }
   .header__product {
     max-width: 80%;
     margin: 1rem;
@@ -68,13 +81,14 @@ body {
 
 .navigation {
   width: 100vw;
-  min-height: 5vh;
+  min-height: 10vh;
+  z-index: 1;
+  background-color: #F7F0DE;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  position: relative; }
+  align-items: center; }
   .navigation__logo-box {
-    margin: 1rem 0;
+    margin: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +103,7 @@ body {
     .navigation__logoName span::before {
       content: "";
       width: .8rem;
-      height: 2px;
+      height: 1.5px;
       position: absolute;
       transform: translateX(0.2rem);
       background-color: #000; }
@@ -168,3 +182,22 @@ body {
     transform: rotate(0); }
   100% {
     transform: rotate(45deg); } }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.product {
+  width: 100%;
+  height: 80vh; }
+  @media screen and (min-width: 75em) {
+    .product {
+      height: 100vh; } }
+  .product__img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image-mb/butelka.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }

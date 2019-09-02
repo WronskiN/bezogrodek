@@ -1,17 +1,18 @@
 .navigation {
+  // position: fixed;
+  // top: 0;
   width: 100vw;
-  min-height: 5vh;
+  min-height: 10vh;
+  z-index: 1;
+  background-color: $color-primary;
+ 
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
 
-  @media screen and (min-width: $bp-medium) {
-    // justify-content: space-between;
-  }
   // NAVIGATION - LOGO
   &__logo-box {
-    margin: 1rem 0;
+    margin: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +29,7 @@
     & span::before {
       content: "";
       width: .8rem;
-      height: 2px;
+      height: 1.5px;
       position: absolute;
       transform: translateX(.2rem);
       background-color: $color-black;
@@ -136,4 +137,10 @@
     }
     100% {transform: rotate(45deg);}
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
 }

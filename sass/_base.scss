@@ -16,6 +16,7 @@ html {
   }
 }
 body {
+  min-height: 200vh;
   font-family: $font-primary;
   color: $color-black;
   line-height: 1.6;
@@ -30,4 +31,17 @@ body {
   align-items: center;
   margin: 0 auto;
   background-color: $color-primary;
+
+  position: relative;
+}
+
+.main {
+  max-width: 1330px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
 }

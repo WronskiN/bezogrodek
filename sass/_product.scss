@@ -1,0 +1,21 @@
+.product {
+  width: 100%;
+  height: 80vh;
+
+  @media screen and (min-width: $bp-largest) {
+    height: 100vh;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image-mb/butelka.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // @media screen and (min-width: $bp-medium) {
+    //   background-image: url(../image/);
+    // }
+}
+}
