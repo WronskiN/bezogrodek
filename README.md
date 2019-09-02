@@ -1,3 +1,5 @@
+Project is not completed.
+
 # bezogrodek
 Website for bezogrodek.pl
 
