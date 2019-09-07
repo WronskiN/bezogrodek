@@ -1,21 +1,196 @@
+// SECTION PRODUCT - BOTTLE AND INCONS 
 .product {
   width: 100%;
   height: 80vh;
+  background-image: url(../image-mb/tlo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
 
   @media screen and (min-width: $bp-largest) {
     height: 100vh;
   }
 
-  &__img {
+  // BOTTLE
+  &--bottle {
     width: 100%;
-    height: 100%;
-    background-image: url(../image-mb/butelka.jpg);
-    background-position: center;
+    height: 90%;
+    background-image: url(../image-mb/butelka.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center left;
+    background-size: contain;
+    position: absolute;
+    left: -10%;
 
-    // @media screen and (min-width: $bp-medium) {
-    //   background-image: url(../image/);
-    // }
-}
+    @media screen and (min-width: $bp-smaller-2) {
+      left: 2%;
+    }
+    @media screen and (min-width: $bp-small-2) {
+      background-position: center;
+      left: -6%;
+    }
+    @media screen and (min-width: $bp-small) {
+      left: -1%;
+    }
+    @media screen and (min-width: $bp-medium) {
+      left: -5%;
+    }
+  }
+  
+
+  // ICONS CONTAINER
+  &__box {
+
+    &--icons{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 30%;
+      height: 80%;
+      padding-bottom: 3rem;
+      list-style: none;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      @media screen and (min-width: $bp-medium) {
+        right: 36.5%;
+      }
+      @media screen and (min-width: $bp-large) {
+        right: 38.5%;
+      }
+    }
+    // ICONS
+    &--icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      background-image: url(../image-mb/Icon/icon1.svg);
+      background-size: contain;
+      background-position: center;
+      position: relative;
+    }
+
+    &--icon:nth-child(2) {
+      background-image: url(../image-mb/Icon/icon2.svg);
+    }
+    &--icon:nth-child(3) {
+      background-image: url(../image-mb/Icon/icon3.svg);
+    }
+    &--icon:nth-child(4) {
+      background-image: url(../image-mb/Icon/icon4.svg);
+    }
+    &--icon:nth-child(5) {
+      background-image: url(../image-mb/Icon/icon5.svg);
+    }
+    &--icon:nth-child(6) {
+      background-image: url(../image-mb/Icon/icon6.svg);
+    }
+    &--icon:nth-child(7) {
+      background-image: url(../image-mb/Icon/icon7.svg);
+    }
+    &--icon:nth-child(8) {
+      background-image: url(../image-mb/Icon/icon8.svg);
+    }
+
+    // ICONS LINE ON THE LEFT
+    &--icon::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 9rem;
+      background-color: black;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -9rem;
+
+      @media screen and (min-width: $bp-largest) {
+        width: 14rem;
+        left: -14rem;
+      }
+    }
+    &--icon:nth-child(2)::before {
+      width: 8.5rem;
+      left: -8.5rem;
+      @media screen and (min-width: $bp-largest) {
+        width: 13rem;
+        left: -13rem;
+      }
+    }
+    &--icon:nth-child(3)::before {
+      width: 8rem;
+      left: -8rem;
+      @media screen and (min-width: $bp-largest) {
+        width: 12rem;
+        left: -12rem;
+      }
+    }
+    &--icon:nth-child(4)::before {
+      width: 6rem;
+      left: -6rem;
+      @media screen and (min-width: $bp-largest) {
+        width: 9rem;
+        left: -9rem;
+      }
+    }
+    &--icon:nth-child(5)::before,
+    &--icon:nth-child(6)::before,
+    &--icon:nth-child(7)::before,
+    &--icon:nth-child(8)::before {
+      width: 5rem;
+      left: -5rem;
+      @media screen and (min-width: $bp-largest) {
+        width: 8rem;
+        left: -8rem;
+      }
+    }
+    
+    // ICONS DESCRIPTION ON THE RIGHT
+    &--icon::after {
+      content: "naturalny";
+      text-transform: uppercase;
+      font-size: .9rem;
+      font-weight: 600;
+      line-height: 1;
+      display: block;
+      width: 9rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -9.5rem;
+    }
+
+    &--icon:nth-child(2)::after {
+      content: "produkowany w polsce";
+    }
+    &--icon:nth-child(3)::after {
+      content: "bez babelków";
+    }
+    &--icon:nth-child(4)::after {
+      content: "bez konserwantów";
+    }
+    &--icon:nth-child(5)::after{
+      content: "bez alkoholu";
+    }
+    &--icon:nth-child(6)::after{
+      content: "bez syropu glukozowa -fruktozowego";
+    }
+    &--icon:nth-child(7)::after{
+      content:  "bez sztucznych barwników";
+    }
+    &--icon:nth-child(8)::after {
+      content: "weganski";
+    }
+
+  }
+  
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -45,6 +46,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  top: 10vh;
   left: 0; }
   .header__product {
     max-width: 80%;
@@ -80,6 +82,9 @@ body {
         background-position: center top; } }
 
 .navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   min-height: 10vh;
   z-index: 1;
@@ -190,14 +195,145 @@ body {
 
 .product {
   width: 100%;
-  height: 80vh; }
+  height: 80vh;
+  background-image: url(../image-mb/tlo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
   @media screen and (min-width: 75em) {
     .product {
       height: 100vh; } }
-  .product__img {
+  .product--bottle {
     width: 100%;
-    height: 100%;
-    background-image: url(../image-mb/butelka.jpg);
-    background-position: center;
+    height: 90%;
+    background-image: url(../image-mb/butelka.png);
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-position: center left;
+    background-size: contain;
+    position: absolute;
+    left: -10%; }
+    @media screen and (min-width: 23em) {
+      .product--bottle {
+        left: 2%; } }
+    @media screen and (min-width: 30em) {
+      .product--bottle {
+        background-position: center;
+        left: -6%; } }
+    @media screen and (min-width: 37.5em) {
+      .product--bottle {
+        left: -1%; } }
+    @media screen and (min-width: 50em) {
+      .product--bottle {
+        left: -5%; } }
+  .product__box--icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30%;
+    height: 80%;
+    padding-bottom: 3rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    @media screen and (min-width: 50em) {
+      .product__box--icons {
+        right: 36.5%; } }
+    @media screen and (min-width: 62.5em) {
+      .product__box--icons {
+        right: 38.5%; } }
+  .product__box--icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-image: url(../image-mb/Icon/icon1.svg);
+    background-size: contain;
+    background-position: center;
+    position: relative; }
+  .product__box--icon:nth-child(2) {
+    background-image: url(../image-mb/Icon/icon2.svg); }
+  .product__box--icon:nth-child(3) {
+    background-image: url(../image-mb/Icon/icon3.svg); }
+  .product__box--icon:nth-child(4) {
+    background-image: url(../image-mb/Icon/icon4.svg); }
+  .product__box--icon:nth-child(5) {
+    background-image: url(../image-mb/Icon/icon5.svg); }
+  .product__box--icon:nth-child(6) {
+    background-image: url(../image-mb/Icon/icon6.svg); }
+  .product__box--icon:nth-child(7) {
+    background-image: url(../image-mb/Icon/icon7.svg); }
+  .product__box--icon:nth-child(8) {
+    background-image: url(../image-mb/Icon/icon8.svg); }
+  .product__box--icon::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 9rem;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -9rem; }
+    @media screen and (min-width: 75em) {
+      .product__box--icon::before {
+        width: 14rem;
+        left: -14rem; } }
+  .product__box--icon:nth-child(2)::before {
+    width: 8.5rem;
+    left: -8.5rem; }
+    @media screen and (min-width: 75em) {
+      .product__box--icon:nth-child(2)::before {
+        width: 13rem;
+        left: -13rem; } }
+  .product__box--icon:nth-child(3)::before {
+    width: 8rem;
+    left: -8rem; }
+    @media screen and (min-width: 75em) {
+      .product__box--icon:nth-child(3)::before {
+        width: 12rem;
+        left: -12rem; } }
+  .product__box--icon:nth-child(4)::before {
+    width: 6rem;
+    left: -6rem; }
+    @media screen and (min-width: 75em) {
+      .product__box--icon:nth-child(4)::before {
+        width: 9rem;
+        left: -9rem; } }
+  .product__box--icon:nth-child(5)::before, .product__box--icon:nth-child(6)::before, .product__box--icon:nth-child(7)::before, .product__box--icon:nth-child(8)::before {
+    width: 5rem;
+    left: -5rem; }
+    @media screen and (min-width: 75em) {
+      .product__box--icon:nth-child(5)::before, .product__box--icon:nth-child(6)::before, .product__box--icon:nth-child(7)::before, .product__box--icon:nth-child(8)::before {
+        width: 8rem;
+        left: -8rem; } }
+  .product__box--icon::after {
+    content: "naturalny";
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 1;
+    display: block;
+    width: 9rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -9.5rem; }
+  .product__box--icon:nth-child(2)::after {
+    content: "produkowany w polsce"; }
+  .product__box--icon:nth-child(3)::after {
+    content: "bez babelków"; }
+  .product__box--icon:nth-child(4)::after {
+    content: "bez konserwantów"; }
+  .product__box--icon:nth-child(5)::after {
+    content: "bez alkoholu"; }
+  .product__box--icon:nth-child(6)::after {
+    content: "bez syropu glukozowa -fruktozowego"; }
+  .product__box--icon:nth-child(7)::after {
+    content: "bez sztucznych barwników"; }
+  .product__box--icon:nth-child(8)::after {
+    content: "weganski"; }
