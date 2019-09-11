@@ -1,0 +1,93 @@
+// CONTACT SECTION
+.contact {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+// CONTACT H2
+  &__title {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+//CONTACT FORM CONTAINER
+  &__container {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $bp-large) {
+      flex-direction: row;
+    }
+  }
+  &__box1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: $bp-large) {
+      flex-basis: 60%;
+      margin-bottom: 1rem;
+    }
+
+    &__form {
+      width: 90%;
+      
+    &--field {
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-family: $font-primary;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 1rem 0;
+    }
+    }
+  }
+
+  &__box2 {
+    width: 90%;
+    font-size: 1rem;
+    text-align: justify;
+
+    @media screen and (min-width: $bp-large) {
+      flex-basis: 30%;
+      margin-bottom: 1rem;
+    }
+    &__form {
+
+      &--privacy:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: $color-orange;
+    font-size: 1.5rem;
+    font-family: $font-primary;
+    padding: .5rem 1rem;
+    margin: 2rem 0;
+    @media screen and (min-width: $bp-small-2){
+      margin: 1.5rem 0;
+    }
+    @media screen and (min-width: $bp-large){
+      margin: 1rem 0;
+    }
+  }
+  &__button:active {
+    color: white;
+  }
+  &__button:hover {
+    cursor: pointer;
+  }
+}

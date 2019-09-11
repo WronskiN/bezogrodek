@@ -1,0 +1,13 @@
+.about {
+  width: 100%;
+  min-height: 50vh;
+  &__img {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../image-mb/butelki.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+}
