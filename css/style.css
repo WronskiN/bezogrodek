@@ -19,7 +19,10 @@ body {
   color: #000;
   line-height: 1.6;
   box-sizing: border-box;
-  background-color: #f0e4c6; }
+  background-color: #F7F0DE; }
+
+ul {
+  list-style: none; }
 
 .container {
   max-width: 1330px;
@@ -38,6 +41,18 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; }
+
+.fab {
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  color: black; }
+
+.fa-facebook-square:hover {
+  color: blue; }
+
+.fa-instagram:hover {
+  color: #dc2743; }
 
 .product {
   width: 100%;
@@ -62,7 +77,8 @@ body {
     background-position: center left;
     background-size: contain;
     position: absolute;
-    left: -10%; }
+    left: -10%;
+    z-index: 1; }
     @media screen and (min-width: 23em) {
       .product--bottle {
         left: 2%; } }
@@ -244,7 +260,7 @@ body {
     margin: 1rem 0; }
   .contact__container {
     width: 100%;
-    min-height: 50vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,7 +288,13 @@ body {
         font-family: "Montserrat", sans-serif;
         width: 100%;
         margin-bottom: 1rem;
-        padding: 1rem 0; }
+        padding: 1rem 0;
+        box-sizing: border-box;
+        outline: none; }
+      .contact__box1__form--field:focus {
+        border-radius: 10px;
+        border: 0.5px solid #eeae4c;
+        background-color: #fcf8f8; }
   .contact__box2 {
     width: 90%;
     font-size: 1rem;
@@ -293,13 +315,100 @@ body {
     @media screen and (min-width: 30em) {
       .contact__button {
         margin: 1.5rem 0; } }
-    @media screen and (min-width: 62.5em) {
-      .contact__button {
-        margin: 1rem 0; } }
   .contact__button:active {
     color: white; }
   .contact__button:hover {
     cursor: pointer; }
+
+.contact__details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+  padding: 1rem; }
+  @media screen and (min-width: 26.5em) {
+    .contact__details {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around; } }
+  .contact__details--header {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #eeae4c; }
+  .contact__details--address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 62.5em) {
+      .contact__details--address {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 50%; } }
+    .contact__details--address__social {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .contact__details--address__social--item .fab {
+        font-size: 2.5rem;
+        padding: 1rem;
+        margin: 1rem;
+        color: black; }
+      .contact__details--address__social--item .fa-facebook-square:hover {
+        color: blue; }
+      .contact__details--address__social--item .fa-instagram:hover {
+        color: #dc2743; }
+  .contact__details--address-item {
+    font-size: 1.3rem;
+    font-weight: 400; }
+  .contact__details--info-item {
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    @media screen and (min-width: 62.5em) {
+      .contact__details--info-item {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap; } }
+    .contact__details--info-item span {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 1px; }
+    .contact__details--info-item a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: #000; }
+      @media screen and (min-width: 62.5em) {
+        .contact__details--info-item a {
+          margin-left: .5rem; } }
+    .contact__details--info-item a:hover {
+      color: #eeae4c; }
+
+.footer {
+  width: 100vw;
+  min-height: 5vh;
+  background-color: #f0e4c6;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer__logo {
+    flex-basis: 33%; }
+    .footer__logo--item {
+      font-size: 2rem; }
+  .footer__copyrights {
+    flex-basis: 33%;
+    text-align: center; }
+  .footer__socialMedia {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+    @media screen and (min-width: 30em) {
+      .footer__socialMedia {
+        justify-content: center; } }
 
 .header {
   width: 100%;
@@ -353,13 +462,13 @@ body {
   background-color: #F7F0DE;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  z-index: 1000; }
   .navigation__logo-box {
     margin: 2rem 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 10; }
+    align-items: center; }
   .navigation__logoName {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;

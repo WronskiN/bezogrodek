@@ -17,7 +17,7 @@
       <h1 class="navigation__logoName">bez <br>ogr<span>odek</h1>
     </div>
     <ul class="navigation__list">
-      <li class="navigation__item"><a href="#" class="navigation__item--link">nasze producty</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__item--link">nasze produkty</a></li>
       <li class="navigation__item"><a href="#" class="navigation__item--link">o nas</a></li>
       <li class="navigation__item"><a href="#" class="navigation__item--link">kontakt</a></li>
     </ul>
@@ -72,7 +72,7 @@
                   <input type="text" name="name" placeholder="Imię i Nazwisko" id="name" class="contact__box1__form--field">
                 </p>
                 <p class="contact__box1__form--field2">
-                  <input type="email" name="email" placeholder="Adres e-mail" id="email" class="contact__box1__form--field">
+                  <input type="email" name="email" placeholder="Adres e-mail" id="mail" class="contact__box1__form--field">
                 </p>
                 <p class="contact__box1__form--field3">
                   <input type="text" name="phone" placeholder="Numer telefonu" id="phone" class="contact__box1__form--field">
@@ -85,7 +85,7 @@
         </div>
         <div class="contact__box2">
           <label for="privacy" class="contact__box2__form">
-            <input type="checkbox" class="contact__box2__form--input" name="privacy" id="privacy" value="1" required="required">
+            <input type="checkbox" id="privacy" class="contact__box2__form--input" name="privacy"  value="1" required="required">
             <p class="contact__box2__form--privacy">"
             Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu dla potrzeb marketingowych oraz w celu wykonania ofert handlowych lub zrealizowania usług przez firmę Browar Profesja Sp. Z O.O na podstawie art. 29 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (Dz.U.UE.L.2016.119.1)"</p>
             <p class="contact__box2__form--privacy">Informujemy, że posiadacie Państwo prawo dostępu do treści swoich danych i ich poprawiania, a ich podanie jest dobrowolne. Informujemy, że Państwa zgoda może zostać cofnięta w dowolnym momencie przez wysłanie wiadomości e-mail na adres biuro@browarprofesja.pl spod adresu, którego zgoda dotyczy. Informujemy, że Państwa dane nie będą przekazywane ani udostępniane.</p>
@@ -93,10 +93,47 @@
         </div>
       </div>
       <button class="contact__button" type="submit">Wyślij</button>
+      <div class="contact__details">
+        <div class="contact__details--address">
+          <div>
+          <h3 class="contact__details--address-header contact__details--header">Adres</h3>
+          <ul class="contact__details--address-list">
+            <li class="contact__details--address-item">ul. Kwidzyńska 6E | 51-416 Wrocław</li>
+            <li class="contact__details--address-item">NIP: 9141563164</li>
+            <li class="contact__details--address-item">KRS: 0000443951</li>
+            <li class="contact__details--address-item">REGON: 021989204</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="contact__details--header">Social Media</h3>
+          <ul class="contact__details--address__social">
+            <li class="contact__details--address__social--item"><a href="https://www.facebook.com/napojebezogrodek"><i class="fab fa-facebook-square"></i></a></li>
+            <li class="contact__details--address__social--item"><a href="https://www.instagram.com/napojebezogrodek/"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="contact__details--info">
+          <h3 class="contact__details--info-header contact__details--header">Kontakt</h3>
+          <ul class="contact__details--info-list">
+            <li class="contact__details--info-item"><span>Biuro:</span><p><a href="napoje@browarprofesja.pl">napoje@browarprofesja.pl</a></p>&nbsp;<a href="tel:+48733703101">+48733703101</a></li>
+            <li class="contact__details--info-item"><span>Sprzedaż:</span><p><a href="mailto:sprzedaz@browarprofesja.pl">sprzedaz@browarprofesja.pl</a></p>&nbsp;<a href="tel:+48690969373">+48690969373</a></li>
+            <li class="contact__details--info-item"><span>Marketing:</span><p><a href="mailto:marketing@browarprofesja.pl">marketing@browarprofesja.pl</a></p></li>
+            <li class="contact__details--info-item"><span>Zamówienia:</span><p><a href="mailto:zamowienia@browarprofesja.pl">zamowienia@browarprofesja.pl</a></p></li>
+            <li class="contact__details--info-item"><span>Produkcja:</span><p><a href="mailto:produkcja@browarprofesja.pl">produkcja@browarprofesja.pl</a></p></li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
+    <div class="navigation__logo-box footer__logo ">
+      <h1 class="navigation__logoName footer__logo--item">bez <br>ogr<span>odek</h1>
+    </div>
     <p class="footer__copyrights">all &copy; reserved</p>
+    <ul class="footer__socialMedia">
+      <li class="footer__socialMedia--item"><a href="https://www.facebook.com/napojebezogrodek"><i class="fab fa-facebook-square"></i></a></li>
+      <li class="footer__socialMedia--item"><a href="https://www.instagram.com/napojebezogrodek/"><i class="fab fa-instagram"></i></a></li>
+    </ul>
   </footer>
   
 </div>

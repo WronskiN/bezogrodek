@@ -13,7 +13,7 @@
   align-items: center;
 
   position: relative;
-
+  
   @media screen and (min-width: $bp-largest) {
     height: 100vh;
   }
@@ -28,6 +28,7 @@
     background-size: contain;
     position: absolute;
     left: -10%;
+    z-index: 1;
 
     @media screen and (min-width: $bp-smaller-2) {
       left: 2%;

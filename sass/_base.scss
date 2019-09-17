@@ -21,9 +21,11 @@ body {
   color: $color-black;
   line-height: 1.6;
   box-sizing: border-box;
-  background-color: $color-primary-dark;
+  background-color: $color-primary;
 }
-
+ul {
+  list-style: none;
+}
 .container {
   max-width: 1330px;
   display: flex;
@@ -44,4 +46,17 @@ body {
   align-items: center;
 
   position: relative;
+}
+
+.fab {
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  color: black;
+}
+.fa-facebook-square:hover {
+  color: blue;
+}
+.fa-instagram:hover {
+  color: #dc2743;
 }
