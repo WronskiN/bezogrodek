@@ -1,7 +1,7 @@
 // SECTION PRODUCT - BOTTLE AND INCONS 
 .product {
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
   background-image: url(../image-mb/tlo.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,12 @@
   align-items: center;
 
   position: relative;
-  
+  @media (orientation: landscape){
+    min-height: 150vh;
+  }
+  @media (min-width: $bp-large) and (orientation: landscape) {
+    min-height: 80vh;
+  }
   @media screen and (min-width: $bp-largest) {
     height: 100vh;
   }
@@ -73,35 +78,67 @@
     &--icon {
       width: 3.5rem;
       height: 3.5rem;
-      background-image: url(../image-mb/Icon/icon1.svg);
+      // background-image: url(../image-mb/Icon/icon1.svg);
       background-size: contain;
       background-position: center;
       position: relative;
+      opacity: 0;
+      // visibility: hidden;
+      // animation: fadeIn ease 4s;
+      // animation-fill-mode: forwards;
     }
-
+    &--icon:nth-child(1) {
+      background-image: url(../image-mb/Icon/icon1.svg);
+      // animation-delay: .1s;
+    }
     &--icon:nth-child(2) {
       background-image: url(../image-mb/Icon/icon2.svg);
+      animation-delay: .3s;
     }
     &--icon:nth-child(3) {
       background-image: url(../image-mb/Icon/icon3.svg);
+      animation-delay: .5s;
     }
     &--icon:nth-child(4) {
       background-image: url(../image-mb/Icon/icon4.svg);
+      animation-delay: .8s;
     }
     &--icon:nth-child(5) {
       background-image: url(../image-mb/Icon/icon5.svg);
+      animation-delay: 1.1s;
     }
     &--icon:nth-child(6) {
       background-image: url(../image-mb/Icon/icon6.svg);
+      animation-delay: 1.4s;
     }
     &--icon:nth-child(7) {
       background-image: url(../image-mb/Icon/icon7.svg);
+      animation-delay: 1.7s;
     }
     &--icon:nth-child(8) {
       background-image: url(../image-mb/Icon/icon8.svg);
+      animation-delay: 2s;
     }
 
-    // ICONS LINE ON THE LEFT
+    //Animation for product icons
+    &--animation {
+      animation: fadeIn ease 4s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+
+      }
+    }
+      // ICONS LINE ON THE LEFT
     &--icon::before {
       content: "";
       display: block;

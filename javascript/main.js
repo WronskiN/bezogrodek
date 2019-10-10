@@ -16,4 +16,32 @@ window.onscroll = function() {
   } else {
     navbar.style.opacity = "1";
   }
-}
+};
+// JQuery trigger animation onscroll
+$(document).on('scroll', function() {
+  const windowHeight = $(window).height();
+  const scrollValue = $(this).scrollTop()
+
+  const $sectionProduct = $('.product');
+  const $sectionIcon = $('.product__box--icon');
+  
+  const sectionFromTop = $sectionProduct.offset().top;
+  const sectionHeight = $sectionProduct.outerHeight();
+
+  if(scrollValue < sectionFromTop + sectionHeight - windowHeight) {  
+    $sectionIcon.addClass('product__box--animation');
+  }
+
+});
+// jQuery Smooth Scroll (Nav)
+$('.navigation a').on('click', function(e) {
+  if(this.hash !== '') {
+    e.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800);
+  }
+});
