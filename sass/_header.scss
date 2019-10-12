@@ -9,7 +9,10 @@
   position: relative;
   top: 10vh;
   left: 0;
-  
+  margin-top: 4rem;
+  @media screen and (orientation: landscape) {
+    margin-top: 5rem;
+  }
 
   &__product {
     max-width: 80%;
