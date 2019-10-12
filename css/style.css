@@ -120,6 +120,7 @@ ul {
   .product__box--icon {
     width: 3.5rem;
     height: 3.5rem;
+    padding: .5rem 0;
     background-size: contain;
     background-position: center;
     position: relative;
@@ -152,6 +153,14 @@ ul {
     animation-fill-mode: forwards; }
 
 @keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
   20% {
@@ -274,6 +283,9 @@ ul {
     .socialMedia--item a:hover .fas,
     .socialMedia--item a:hover .fab {
       color: #F7F0DE; }
+    .socialMedia--item .fas, .socialMedia--item .fab {
+      margin: 0;
+      padding: 0; }
 
 .contact {
   width: 100%;
@@ -393,6 +405,11 @@ ul {
   .contact__details--address-item {
     font-size: 1.3rem;
     font-weight: 400; }
+    .contact__details--address-item a {
+      text-decoration: none;
+      color: black; }
+    .contact__details--address-item a:hover {
+      color: #eeae4c; }
   .contact__details--info-item {
     margin-bottom: .5rem;
     display: flex;
@@ -596,11 +613,69 @@ ul {
 
 .about {
   width: 100%;
-  min-height: 50vh; }
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 1rem 0; }
+  .about__description {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .about__description--title {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 2rem;
+      margin: 2rem 0; }
+    .about__description--paragraph, .about__description--border {
+      margin: 1rem;
+      text-align: center; }
+    .about__description--paragraph {
+      font-size: 1.4rem; }
+      @media screen and (min-width: 23em) {
+        .about__description--paragraph {
+          font-size: 1.6rem; } }
+      @media screen and (min-width: 62.5em) {
+        .about__description--paragraph {
+          margin: 1rem 10rem; } }
+    .about__description--border {
+      border: 2px solid black;
+      padding: .5rem 0;
+      margin: 1rem 3rem; }
+      @media screen and (min-width: 50em) and (orientation: landscape) {
+        .about__description--border {
+          margin: 1rem 10rem; } }
+      @media screen and (min-width: 62.5em) {
+        .about__description--border {
+          margin: 1rem 20rem;
+          font-size: 2rem; } }
+      .about__description--border span {
+        text-transform: uppercase; }
+        @media screen and (min-width: 62.5em) {
+          .about__description--border span {
+            font-size: 3rem; } }
+    .about__description--bold {
+      font-weight: 700; }
   .about__img {
     width: 100%;
     height: 50vh;
-    background-image: url(../image-mb/butelki.jpg);
+    background-image: url(../image-mb/produkty.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+    @media screen and (orientation: landscape) {
+      .about__img {
+        margin-top: 2rem;
+        height: 100vh; } }
+    @media screen and (min-width: 50em) and (orientation: landscape) {
+      .about__img {
+        height: 120vh; } }
+    @media screen and (min-width: 62.5em) {
+      .about__img {
+        height: 120vh; } }
+    @media screen and (min-width: 1400px) {
+      .about__img {
+        height: 100vh; } }

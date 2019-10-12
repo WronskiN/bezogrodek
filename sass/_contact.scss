@@ -156,6 +156,14 @@
   &--address-item {
     font-size: 1.3rem;
     font-weight: 400;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: $color-orange;
+    }
   }
 
   &--info-item {

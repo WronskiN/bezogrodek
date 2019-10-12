@@ -6,7 +6,7 @@
 
   &__list {
     list-style: none;
-    margin: 3rem ;
+    margin: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,11 +56,9 @@
     a:hover .fab {
       color: $color-primary;
     }
-    // a:hover .fa-facebook-square {
-    //   color: blue;
-    // }
-    // a:hover .fa-instagram {
-    //   color: rgb(252, 27, 65);
-    // }
+    .fas, .fab {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
