@@ -48,16 +48,16 @@
         margin-right: 1rem;
       }
     }
-    a:hover{
-      color: $color-orange;
-    }
+    // a:hover{
+    //   color: $color-orange;
+    // }
     a:hover .far,
     a:hover .fas,
     a:hover .fab {
-      color: $color-primary;
+      color: $color-orange;
     }
     .fas, .fab {
-      margin: 0;
+      margin: 0 1rem 0;
       padding: 0;
     }
   }

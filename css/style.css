@@ -20,7 +20,8 @@ body {
   line-height: 1.6;
   box-sizing: border-box;
   background-color: #F7F0DE;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 ul {
   list-style: none; }
@@ -277,14 +278,12 @@ ul {
       .socialMedia--item a i {
         font-size: 2rem;
         margin-right: 1rem; }
-    .socialMedia--item a:hover {
-      color: #eeae4c; }
     .socialMedia--item a:hover .far,
     .socialMedia--item a:hover .fas,
     .socialMedia--item a:hover .fab {
-      color: #F7F0DE; }
+      color: #eeae4c; }
     .socialMedia--item .fas, .socialMedia--item .fab {
-      margin: 0;
+      margin: 0 1rem 0;
       padding: 0; }
 
 .contact {

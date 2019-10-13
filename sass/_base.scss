@@ -23,6 +23,7 @@ body {
   box-sizing: border-box;
   background-color: $color-primary;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
