@@ -25,7 +25,7 @@
       text-align: center;
     }
     &--paragraph {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
 
       @media screen and (min-width: $bp-smaller-2) {
         font-size: 1.6rem;
@@ -71,7 +71,7 @@
       height: 100vh;
     }
     @media screen and (min-width: $bp-medium) and (orientation: landscape) {
-      height: 120vh;
+      min-height: 120vh;
     }
     @media screen and (min-width: $bp-large) {
       height: 120vh;

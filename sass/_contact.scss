@@ -177,18 +177,20 @@
       justify-content: flex-start;
       flex-wrap: wrap;
     }
-    span {
-      font-size: 1.4rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-    }
 
     a {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       text-decoration: none;
       color: #000;
       @media screen and (min-width: $bp-large){
         margin-left: .5rem;
+      }
+
+      i {
+        margin-right: 1rem;
+      }
+      .fa-phone {
+        transform: rotate(90deg);
       }
     }
     a:hover {
