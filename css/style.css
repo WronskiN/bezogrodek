@@ -231,11 +231,11 @@ ul {
   .product__box--icon:nth-child(5)::after {
     content: "bez alkoholu"; }
   .product__box--icon:nth-child(6)::after {
-    content: "bez syropu glukozowa -fruktozowego"; }
+    content: "bez syropu glukozowo - fruktozowego"; }
   .product__box--icon:nth-child(7)::after {
     content: "bez sztucznych barwników"; }
   .product__box--icon:nth-child(8)::after {
-    content: "weganski"; }
+    content: "wegański"; }
 
 .socialMedia {
   width: 100%;
@@ -285,6 +285,10 @@ ul {
     .socialMedia--item .fas, .socialMedia--item .fab {
       margin: 0 1rem 0;
       padding: 0; }
+    .socialMedia--item .fa-phone {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
 
 .contact {
   width: 100%;
@@ -364,6 +368,7 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: left;
   padding: 1rem;
@@ -373,6 +378,14 @@ ul {
       width: 100%;
       flex-direction: row;
       justify-content: space-around; } }
+  @media screen and (min-width: 62.5em) {
+    .contact__details {
+      flex-wrap: nowrap; } }
+  .contact__details--info {
+    flex-basis: 45%; }
+    @media screen and (min-width: 62.5em) {
+      .contact__details--info {
+        flex-basis: 20%; } }
   .contact__details--header {
     font-size: 2rem;
     letter-spacing: 1px;
@@ -429,7 +442,14 @@ ul {
       .contact__details--info-item a i {
         margin-right: 1rem; }
       .contact__details--info-item a .fa-phone {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
         transform: rotate(90deg); }
+      .contact__details--info-item a .fa-envelope {
+        font-size: 1.1rem; }
+        @media (min-width: 50em) {
+          .contact__details--info-item a .fa-envelope {
+            font-size: 1.3rem; } }
     .contact__details--info-item a:hover {
       color: #eeae4c; }
 
@@ -480,7 +500,7 @@ ul {
     text-align: center; }
     @media screen and (min-width: 62.5em) {
       .header__product {
-        margin: 1rem 10rem; } }
+        margin: 1rem 7rem; } }
     .header__product--p1 {
       margin-bottom: 1rem; }
       .header__product--p1 span {
@@ -665,11 +685,13 @@ ul {
       font-weight: 700; }
   .about__img {
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     background-image: url(../image-mb/produkty.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; }
     @media screen and (orientation: landscape) {
       .about__img {
         margin-top: 2rem;
@@ -679,7 +701,7 @@ ul {
         min-height: 120vh; } }
     @media screen and (min-width: 62.5em) {
       .about__img {
-        height: 120vh; } }
+        height: 70vh; } }
     @media screen and (min-width: 1400px) {
       .about__img {
         height: 100vh; } }

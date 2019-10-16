@@ -60,5 +60,10 @@
       margin: 0 1rem 0;
       padding: 0;
     }
+    .fa-phone {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
   }
 }
