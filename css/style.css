@@ -225,7 +225,7 @@ ul {
   .product__box--icon:nth-child(2)::after {
     content: "produkowany w polsce"; }
   .product__box--icon:nth-child(3)::after {
-    content: "bez babelków"; }
+    content: "bez bąbelków"; }
   .product__box--icon:nth-child(4)::after {
     content: "bez konserwantów"; }
   .product__box--icon:nth-child(5)::after {
