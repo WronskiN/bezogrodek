@@ -1,3 +1,10 @@
+<!-- 
+  Website: www.bezogrodek.pl .
+  Created by: Norbert Wronski & Marcin Polewaczyk (SotonWeb).
+  All rights reservet.
+-->
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -73,7 +80,33 @@
     </section>
     <section class="contact" id="contact">
       <h2 class="contact__title">Kontakt z nami</h2>
-      <div class="contact__container">
+      <form action="/bezogrodek/#wpcf7-f6-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+        <div class="cf7_container contact__container">
+            <div class="cf7_container_box1 contact__box1">
+                <div class="cf7_box1_field_container contact__box1">
+                    <span class="wpcf7-form-control-wrap your-name contact__box1__form"><input type="text" name="your-name" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required cf7_box1_field contact__box1__form--field" id="name" aria-required="true" aria-invalid="false" placeholder="Imię i Nazwisko" /></span>
+                </div>
+                <div class="cf7_box1_field_container contact__container contact__box1">
+                    <span class="wpcf7-form-control-wrap your-email contact__box1__form"><input type="email" name="your-email" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email cf7_box1_field contact__box1__form--field" id="mail" aria-required="true" aria-invalid="false" placeholder="Adres e-mail" /></span>
+                </div>
+                <div class="cf7_box1_field_container contact__container contact__box1">
+                    <span class="wpcf7-form-control-wrap your-phone contact__box1__form"><input type="tel" name="your-phone" value="" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel cf7_box1_field contact__box1__form--field" id="phone" aria-required="true" aria-invalid="false" placeholder="Numer telefonu" /></span>
+                </div>
+                <div class="cf7_box1_field_container contact__container contact__box1">
+                    <span class="wpcf7-form-control-wrap your-message contact__box1__form"><textarea name="your-message"  rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required cf7_box1_field contact__box1__form--field-textarea contact__box1__form--field" id="message" aria-required="true" aria-invalid="false" placeholder="Treść wiadomości"></textarea></span>
+                </div>
+            </div>
+            <div class="cf7_container_box2 contact__box2">
+                <span class="wpcf7-form-control-wrap your-privacy"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-privacy" value="1" aria-invalid="false" class="cf7_box2_field" id="privacy" /><span class="wpcf7-list-item-label"><p class="contact__box2__form--privacy"> " Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu dla potrzeb marketingowych oraz w celu wykonania ofert handlowych lub zrealizowania usług przez firmę Browar Profesja Sp. Z O.O na podstawie art. 29 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (Dz.U.UE.L.2016.119.1)"</p>
+    
+                <p class="contact__box2__form--privacy"> Informujemy, że posiadacie Państwo prawo dostępu do treści swoich danych i ich poprawiania, a ich podanie jest dobrowolne. Informujemy, że Państwa zgoda może zostać cofnięta w dowolnym momencie przez wysłanie wiadomości e-mail na adres biuro@browarprofesja.pl spod adresu, którego zgoda dotyczy. Informujemy, że Państwa dane nie będą przekazywane ani udostępniane.</p>
+                </span></label></span></span></span>
+            </div>
+        </div>
+        <div class="cf7_submit contact__button--middle"><input type="submit" value="Wyślij" class="wpcf7-form-control wpcf7-submit contact__button"></div>
+    </form>
+    
+      <!-- <div class="contact__container">
         <div class="contact__box1">
             <form action="" method="post" class="contact__box1__form">
                 <p class="contact__box1__form--field1">
@@ -100,7 +133,7 @@
           </label>
         </div>
       </div>
-      <button class="contact__button" type="submit">Wyślij</button>
+      <button class="contact__button" type="submit">Wyślij</button> -->
       <div class="contact__details">
         <div class="contact__details--info">
         <h3 class="contact__details--address-header contact__details--header">Adres</h3>
